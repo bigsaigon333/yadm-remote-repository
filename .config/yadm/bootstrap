@@ -4,4 +4,5 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 if command -v vim >/dev/null 2>&1; then
   echo "Bootstraping Vim"
   nvim '+PlugUpdate' '+PlugClean!' '+PlugUpdate' '+qall'
+  nvim '+CocInstall coc-tsserver coc-css coc-eslint coc-emmet coc-pyright coc-prettier' '+qall'
 fi
