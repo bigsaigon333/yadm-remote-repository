@@ -123,8 +123,11 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 alias vim="nvim"
 alias vi="nvim"
+alias v="nvim"
 alias vimdiff="nvim -d"
 export EDITOR=/usr/local/bin/nvim #
 
 bindkey -v
 
+export N_PREFIX=$HOME/.n
+export PATH=$N_PREFIX/bin:$PATH
